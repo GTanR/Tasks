@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory Structure</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+<ul id="directoryStructure">
+    <li class="directory">
+        <label class="checkbox-label" onclick="toggleSubdirectory('designerTemplates')">
+            <span class="arrow"></span>
+            <input type="radio" name="mainDirectory" id="designerTemplates" />
+            <img src="folder.png">
+            Designer Templates
+        </label>
+    </li>
+    <li class="directory">
+        <label class="checkbox-label" onclick="toggleSubdirectory('quadFos')">
+            <span class="arrow"></span>
+            <input type="radio" name="mainDirectory" id="quadFos" />
+            <img src="folder.png">
+            Quad Fos
+        </label>
+    </li>
+    <li class="directory">
+        <label class="checkbox-label" onclick="toggleSubdirectory('futureIk')">
+            <span class="arrow"></span>
+            <input type="radio" name="mainDirectory" id="futureIk" />
+            <img src="folder.png">
+            Future IK
+        </label>
+        <ul class="subdirectory" id="futureIkSubdirectory">
+            <li>
+                <label class="checkbox-label" onclick="toggleSubdirectory('middleEast')">
+                    <span class="arrow"></span>
+                    <input type="radio" name="middleEast" id="middleEast" />
+                    <img src="folder.png">
+                    Middle East
+                </label>
+                <ul class="subdirectory" id="middleEastSubdirectory">
+                    <li>
+                        <label class="checkbox-label" onclick="toggleSubdirectory('uae')">
+                            <span class="arrow"></span>
+                            <input type="checkbox" id="uae" />
+                            <img src="folder.png">
+                            UAE
+                        </label>
+                        <ul class="subdirectory" id="uaeSubdirectory">
+                            <li>
+                                <label class="checkbox-label" onclick="toggleSubdirectory('dubai')">
+                                    <span class="arrow"></span>
+                                    <input type="checkbox" id="dubai" />
+                                    <img src="folder.png">
+                                    Dubai
+                                </label>
+                                <ul class="subdirectory" id="dubaiSubdirectory">
+                                    <li>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" id="entranceScreen" />
+                                            Dubai Mall Entrance Screen 1600 x 800
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" id="exitScreen" />
+                                            Dubai Mall Exit Screen 1200 x 468
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label class="checkbox-label" onclick="toggleSubdirectory('saudiArabia')">
+                            <span class="arrow"></span>
+                            <input type="radio" name="saudiArabia" id="saudiArabia" />
+                            <img src="folder.png">
+                            Saudi Arabia
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox-label" onclick="toggleSubdirectory('kuwait')">
+                            <span class="arrow"></span>
+                            <input type="radio" name="kuwait" id="kuwait" />
+                            <img src="folder.png">
+                            Kuwait
+                        </label>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
